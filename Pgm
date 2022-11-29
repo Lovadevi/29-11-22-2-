@@ -1,0 +1,19 @@
+eno=int(input())
+name=input()
+group=input()
+salary=int(input())
+da=int(input())
+ta=int(input())
+hra=int(input())
+netsalary=salary+da+ta+hra
+if netsalary>100000:
+    tax=netsalary*10/100
+elif netsalary>50000:
+    tax=netsalary*7/100
+elif netsalary>40000:
+    tax=netsalary*4/100
+elif netsalary>20000:
+    tax=netsalary*2/100
+else:
+    tax=0
+print("tax:",tax)
